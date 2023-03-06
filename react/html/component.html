@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>컴포넌트와 FRAGMENT</title>
+</head>
+<body>
+<nav style="display:flex; flex-direction: row">
+    <h3><a href="./index.html" style="text-decoration: none; padding: 0 20px 20px 0;">MAIN</a></h3>
+    <h3><a href="./component.html" style="text-decoration: none; padding: 0 20px 20px 0;">COMPONENTS & FRAGMENTS</a></h3>
+    <h3><a href="./JSX.html" style="text-decoration: none;">JSX</a></h3>
+</nav>
+<h2 style="text-align: center">FRAGMENT</h2>
+<div style="display:flex; justify-content: center">
+    <div>
+        <h4><input type="text" readonly="readonly" value="<></>" style="width: 40px"/>는 React 에서 Fragment 라고 불리는 것으로, 여러
+            자식 요소를 감싸기 위해 사용됩니다.</h4>
+        <h4>JSX에서 컴포넌트는 하나의 루트 요소만 렌더링 할 수 있기 때문에, Fragment를 사용하면 불필요한 추가 DOM 노드를 만들지 않고 여러 요소를 그룹화 할 수 있습니다.</h4>
+        <h4><input type="text" readonly="readonly" value="<></>" style="width: 40px"/>말고도 <input type="text"
+                                                                                                 readonly="readonly"
+                                                                                                 value="<Fragment></Fragment>"
+                                                                                                 style="width: 160px"/>를
+            사용해도 동일합니다!</h4>
+    </div>
+</div>
+<h2 style="text-align: center">COMPONENT</h2>
+<div style="display:flex; justify-content: center">
+    <div class="colorscripter-code"
+         style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto">
+        <table class="colorscripter-code-table"
+               style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0"
+               cellpadding="0">
+            <tr>
+                <td style="padding:6px;border-right:2px solid #4f4f4f">
+                    <div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%">
+                        <div style="line-height:130%">1</div>
+                        <div style="line-height:130%">2</div>
+                        <div style="line-height:130%">3</div>
+                        <div style="line-height:130%">4</div>
+                        <div style="line-height:130%">5</div>
+                        <div style="line-height:130%">6</div>
+                        <div style="line-height:130%">7</div>
+                        <div style="line-height:130%">8</div>
+                        <div style="line-height:130%">9</div>
+                        <div style="line-height:130%">10</div>
+                        <div style="line-height:130%">11</div>
+                        <div style="line-height:130%">12</div>
+                        <div style="line-height:130%">13</div>
+                        <div style="line-height:130%">14</div>
+                        <div style="line-height:130%">15</div>
+                    </div>
+                </td>
+                <td style="padding:6px 0;text-align:left">
+                    <div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%">
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#999999">/*&nbsp;REACT&nbsp;COMPONENT&nbsp;만들&nbsp;때&nbsp;import</span>
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#999999">*&nbsp;&nbsp;REACT&nbsp;컴포넌트에선&nbsp;XML&nbsp;형식&nbsp;값을&nbsp;반환이&nbsp;가능한데,&nbsp;이를&nbsp;JSX&nbsp;라고&nbsp;부릅니다!&nbsp;*/</span>
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                style="color:#ff3399">import</span>&nbsp;React&nbsp;<span
+                                style="color:#ff3399">from</span>&nbsp;<span
+                                style="color:#ffd500">'react'</span>;
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                style="color:#ff3399">function</span>&nbsp;Test()&nbsp;{
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#ff3399">return</span>&nbsp;(
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span></div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span>div<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span>HELLO<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">!</span>&nbsp;REACT&nbsp;TEST.JSX&nbsp;WORLD<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">!</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">/</span>div<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span></div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">/</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span></div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;);</div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">}</div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#999999">/*&nbsp;이&nbsp;코드는&nbsp;Test&nbsp;라는&nbsp;컴포넌트를&nbsp;내보내겠다는&nbsp;의미입니다.</span>
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#999999">*&nbsp;&nbsp;이렇게&nbsp;해주면&nbsp;다른&nbsp;컴포넌트에서&nbsp;불러와서&nbsp;사용이&nbsp;가능합니다.[캡슐화!]*/</span>
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                style="color:#ff3399">export</span>&nbsp;<span style="color:#ff3399">default</span>&nbsp;Test;
+                        </div>
+                    </div>
+                    <div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a
+                            href="http://colorscripter.com/info#e" target="_blank"
+                            style="color:#4f4f4f;text-decoration:none">Colored by Color Scripter</a></div>
+                </td>
+                <td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e"
+                                                                         target="_blank"
+                                                                         style="text-decoration:none;color:white"><span
+                        style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div style="display:flex; justify-content: center">
+    <div>
+        <h4>리엑트 컴포넌트를 만들 땐, <input type="text"
+                                   readonly="readonly"
+                                   value="import React From 'react';"
+                                   style="width: 170px"/></h4>를 통하여 리엑트를 불러와야 합니다.
+        <h4>리엑트 컴포넌트는 함수형태로도 작성 가능하고, CLASS 형태로도 작성이 가능합니다. 그러나 연픽 포함 대부분은 요즘 함수형 컴포넌트를 사용합니다.</h4>
+        <h4>다른 컴포넌트에서 불러와서 사용하려면, <input type="text"
+                                         readonly="readonly"
+                                         value="export default Test;"
+                                         style="width: 125px"/>를 작성합니다.</h4>
+    </div>
+</div>
+<div style="display: flex; justify-content: center;">
+    <div class="colorscripter-code"
+         style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto">
+        <table class="colorscripter-code-table"
+               style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0"
+               cellpadding="0">
+            <tr>
+                <td style="padding:6px;border-right:2px solid #4f4f4f">
+                    <div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%">
+                        <div style="line-height:130%">1</div>
+                        <div style="line-height:130%">2</div>
+                        <div style="line-height:130%">3</div>
+                        <div style="line-height:130%">4</div>
+                        <div style="line-height:130%">5</div>
+                        <div style="line-height:130%">6</div>
+                        <div style="line-height:130%">7</div>
+                        <div style="line-height:130%">8</div>
+                        <div style="line-height:130%">9</div>
+                        <div style="line-height:130%">10</div>
+                        <div style="line-height:130%">11</div>
+                        <div style="line-height:130%">12</div>
+                        <div style="line-height:130%">13</div>
+                        <div style="line-height:130%">14</div>
+                        <div style="line-height:130%">15</div>
+                        <div style="line-height:130%">16</div>
+                        <div style="line-height:130%">17</div>
+                        <div style="line-height:130%">18</div>
+                        <div style="line-height:130%">19</div>
+                        <div style="line-height:130%">20</div>
+                    </div>
+                </td>
+                <td style="padding:6px 0;text-align:left">
+                    <div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%">
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#999999">/*&nbsp;컴포넌트는&nbsp;일종의&nbsp;UI&nbsp;조각입니다.&nbsp;쉽게&nbsp;재사용이&nbsp;가능합니다.</span>
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#999999">*&nbsp;[CLASS&nbsp;Type&nbsp;컴포넌트]</span>
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#999999">*&nbsp;import&nbsp;React,&nbsp;{&nbsp;Component&nbsp;}&nbsp;from&nbsp;"react";*/</span>
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#999999">/*&nbsp;[FUNCTION&nbsp;TYPE&nbsp;컴포넌트]&nbsp;*/</span>
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                style="color:#ff3399">import</span>&nbsp;React&nbsp;<span
+                                style="color:#ff3399">from</span>&nbsp;<span
+                                style="color:#ffd500">"react"</span>;
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                style="color:#ff3399">import</span>&nbsp;Test&nbsp;<span
+                                style="color:#ff3399">from</span>&nbsp;<span
+                                style="color:#ffd500">'./test'</span>;
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                style="color:#ff3399">function</span>&nbsp;App()&nbsp;{
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#999999">//&nbsp;return&nbsp;&lt;Test&nbsp;/&gt;;</span></div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#ff3399">return</span>&nbsp;(
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span>div<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span></div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span>Test<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">/</span>Test<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span></div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span>Test<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">/</span>Test<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span></div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span>Test<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">/</span>Test<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span></div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&lt;</span><span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">/</span>div<span
+                                style="color:#aaffaa"></span><span style="color:#ff3399">&gt;</span></div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;);</div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">}</div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                style="color:#ff3399">export</span>&nbsp;<span style="color:#ff3399">default</span>&nbsp;App;
+                        </div>
+                        <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div>
+                    </div>
+                    <div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a
+                            href="http://colorscripter.com/info#e" target="_blank"
+                            style="color:#4f4f4f;text-decoration:none">Colored by Color Scripter</a></div>
+                </td>
+                <td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e"
+                                                                         target="_blank"
+                                                                         style="text-decoration:none;color:white"><span
+                        style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

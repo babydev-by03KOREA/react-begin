@@ -8,11 +8,7 @@
     <title>컴포넌트와 FRAGMENT</title>
 </head>
 <body>
-<nav style="display:flex; flex-direction: row">
-    <h3><a href="./index.html" style="text-decoration: none; padding: 0 20px 20px 0;">MAIN</a></h3>
-    <h3><a href="./component.html" style="text-decoration: none; padding: 0 20px 20px 0;">COMPONENTS & FRAGMENTS</a></h3>
-    <h3><a href="./JSX.html" style="text-decoration: none;">JSX</a></h3>
-</nav>
+<div data-include-path="./header.html"></div>
 <h2 style="text-align: center">FRAGMENT</h2>
 <div style="display:flex; justify-content: center">
     <div>
@@ -229,5 +225,24 @@
         </table>
     </div>
 </div>
+<script>
+    <!--HEADER FILE INCLUDE JS-->
+    window.addEventListener('load', function() {
+        let allElements = document.getElementsByTagName('*');
+        Array.prototype.forEach.call(allElements, function(el) {
+            let includePath = el.dataset.includePath;
+            if (includePath) {
+                let xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState === 4 && this.status === 200) {
+                        el.outerHTML = this.responseText;
+                    }
+                };
+                xhttp.open('GET', includePath, true);
+                xhttp.send();
+            }
+        });
+    });
+</script>
 </body>
 </html>

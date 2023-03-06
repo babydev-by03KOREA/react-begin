@@ -8,12 +8,7 @@
     <title>JSX</title>
 </head>
 <body>
-<nav style="display:flex; flex-direction: row">
-    <h3><a href="./index.html" style="text-decoration: none; padding: 0 20px 20px 0;">MAIN</a></h3>
-    <h3><a href="./component.html" style="text-decoration: none; padding: 0 20px 20px 0;">COMPONENTS & FRAGMENTS</a>
-    </h3>
-    <h3><a href="./JSX.html" style="text-decoration: none;">JSX</a></h3>
-</nav>
+<div data-include-path="./header.html"></div>
 <h2 style="text-align: center">JSX</h2>
 <div style="display:flex; justify-content: center;">
     <img src="../assets/images/jsxBabel.png" alt="BABEL WITH JSX" style="width: 90%; height: 40%;"/>
@@ -29,19 +24,168 @@
                 <div>
                     두개 이상의 태그는 무조건 하나의 태그로 감싸져야 합니다. <br/>
                     <img src="../assets/images/tagClosed.png" alt="TAG CLOSED ERROR" style="width: 30%; height: 40%;"/>
-                    <div style="display: inline-block; font-size: 40px; position: relative; top:-100px; margin-left: 40px">=></div>
+                    <div style="display: inline-block; font-size: 40px; position: relative; top:-100px; margin-left: 40px">
+                        =>
+                    </div>
                     <!-- 반응형 시 FIXED 되는 문제 해결 필요 -->
-                    <div style="display: inline-block; position: absolute; margin-left: 50px; margin-top: 80px">
-                        <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">function&nbsp;App()&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Test/&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;);</div><div style="padding:0 6px; white-space:pre; line-height:130%">}</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                    <div style="display: inline-block; position: relative; left: 50px; top: -70px">
+                        <div class="colorscripter-code"
+                             style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto">
+                            <table class="colorscripter-code-table"
+                                   style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;"
+                                   cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td style="padding:6px;border-right:2px solid #4f4f4f">
+                                        <div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%">
+                                            <div style="line-height:130%">1</div>
+                                            <div style="line-height:130%">2</div>
+                                            <div style="line-height:130%">3</div>
+                                            <div style="line-height:130%">4</div>
+                                            <div style="line-height:130%">5</div>
+                                            <div style="line-height:130%">6</div>
+                                            <div style="line-height:130%">7</div>
+                                        </div>
+                                    </td>
+                                    <td style="padding:6px 0;text-align:left">
+                                        <div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%">
+                                            <div style="padding:0 6px; white-space:pre; line-height:130%">function&nbsp;App()&nbsp;{</div>
+                                            <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(</div>
+                                            <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;</div>
+                                            <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Test/&gt;</div>
+                                            <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</div>
+                                            <div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;);</div>
+                                            <div style="padding:0 6px; white-space:pre; line-height:130%">}</div>
+                                        </div>
+                                    </td>
+                                    <td style="vertical-align:bottom;padding:0 2px 4px 0"><a
+                                            href="http://colorscripter.com/info#e" target="_blank"
+                                            style="text-decoration:none;color:white"><span
+                                            style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                    <div style="display: inline-block; font-size: 40px; position: relative; left: 350px; top: -100px">=></div>
-                    <div style="display: inline-block; position: relative; left: 400px; top: -70px">
-                        <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">return&nbsp;(</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&lt;&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Test/&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">);</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                    <div style="display: inline-block; font-size: 40px; position: relative; left: 100px; top: -100px">
+                        =>
                     </div>
+                    <div style="display: inline-block; position: relative; left: 150px; top: -70px; width: 200px;">
+                        <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">return&nbsp;(</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&lt;&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Test/&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">);</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4f;text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
+                    </div>
+                    <h4>Tag 작성 시 이름 없이 작성하면 Fragmen가 만들어지는데, Fragment는 브라우저 상에서 따로 별도의 엘리먼트로 나타나지 않습니다.</h4>
+                </div>
+            </li>
+            <li>
+                JSX 안에 Javascript Value 사용하려면 반드시 <input type="text" readonly="readonly" value="{ 변수명 }"
+                                                         style="width: 53px"/>
+            </li>
+            <li>
+                <h4>JSX 에서 Style & CSS Class 작성법은 HTML과 조금 다릅니다.</h4>
+                <h4>`background-color`의 경우 `backgroundColor`와 같이 camelCase로 작성되어야 합니다!</h4>
+                <div>
+                    <div class="colorscripter-code"
+                         style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto">
+                        <table class="colorscripter-code-table"
+                               style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;"
+                               cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td style="padding:6px;border-right:2px solid #4f4f4f">
+                                    <div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%">
+                                        <div style="line-height:130%">1</div>
+                                        <div style="line-height:130%">2</div>
+                                        <div style="line-height:130%">3</div>
+                                        <div style="line-height:130%">4</div>
+                                        <div style="line-height:130%">5</div>
+                                        <div style="line-height:130%">6</div>
+                                        <div style="line-height:130%">7</div>
+                                        <div style="line-height:130%">8</div>
+                                        <div style="line-height:130%">9</div>
+                                    </div>
+                                </td>
+                                <td style="padding:6px 0;text-align:left">
+                                    <div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%">
+                                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                                style="color:#ff3399">const&nbsp;style&nbsp;=&nbsp;</span>{<span
+                                                style="color:#ff3399"></span></div>
+                                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                                style="color:#ff3399">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                                                style="color:#999999">/*&nbsp;vanilla:&nbsp;background-color&nbsp;*/</span><span
+                                                style="color:#4be6fa"></span></div>
+                                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                                style="color:#4be6fa">&nbsp;&nbsp;&nbsp;&nbsp;backgroundColor</span><span
+                                                style="color:#ff3399">:</span><span
+                                                style="color:#4be6fa">&nbsp;'black',</span></div>
+                                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                                style="color:#4be6fa">&nbsp;&nbsp;&nbsp;&nbsp;color</span><span
+                                                style="color:#ff3399">:</span><span
+                                                style="color:#ff3399">&nbsp;'aqua',</span></div>
+                                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                                style="color:#ff3399">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                                                style="color:#999999">/*&nbsp;vanilla:&nbsp;font-size,&nbsp;default:&nbsp;px&nbsp;*/</span><span
+                                                style="color:#4be6fa"></span></div>
+                                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                                style="color:#4be6fa">&nbsp;&nbsp;&nbsp;&nbsp;fontSize</span><span
+                                                style="color:#ff3399">:</span><span
+                                                style="color:#ff3399">&nbsp;24,</span></div>
+                                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                                style="color:#ff3399">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+                                                style="color:#999999">/*&nbsp;다른&nbsp;단위&nbsp;사용&nbsp;시&nbsp;문자열로&nbsp;작성&nbsp;*/</span><span
+                                                style="color:#4be6fa"></span></div>
+                                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                                style="color:#4be6fa">&nbsp;&nbsp;&nbsp;&nbsp;padding</span><span
+                                                style="color:#ff3399">:</span><span
+                                                style="color:#E083FF">&nbsp;'1rem',</span></div>
+                                        <div style="padding:0 6px; white-space:pre; line-height:130%"><span
+                                                style="color:#E083FF"></span>};
+                                        </div>
+                                    </div>
+                                    <div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic">
+                                        <a href="http://colorscripter.com/info#e" target="_blank"
+                                           style="color:#4f4f4f;text-decoration:none">Colored by Color Scripter</a>
+                                    </div>
+                                </td>
+                                <td style="vertical-align:bottom;padding:0 2px 4px 0"><a
+                                        href="http://colorscripter.com/info#e" target="_blank"
+                                        style="text-decoration:none;color:white"><span
+                                        style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h4><input type="text" readonly="readonly" value="class="
+                           style="width: 50px"/> 가 아닌 <input type="text" readonly="readonly" value="className="
+                                                             style="width: 80px"/> 으로 설정 해 주세요!</h4>
+            </li>
+            <li>
+                <h4>JSX 주석의 경우 아래 코드를 참고하세요!</h4>
+                <div>
+                    <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div><div style="line-height:130%">7</div><div style="line-height:130%">8</div><div style="line-height:130%">9</div><div style="line-height:130%">10</div><div style="line-height:130%">11</div><div style="line-height:130%">12</div><div style="line-height:130%">13</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">function&nbsp;App()&nbsp;{</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;주석은&nbsp;중괄호로&nbsp;감싸주세요!&nbsp;화면에&nbsp;보여유!&nbsp;*/</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Test</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;열리는&nbsp;태그&nbsp;내부에서는&nbsp;이렇게&nbsp;작성도&nbsp;가능해유!</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;style={style}&gt;{name}&lt;/div&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{/*&nbsp;class가&nbsp;아닌&nbsp;className&nbsp;*/}</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;className="gray-box"&gt;&lt;/div&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/&gt;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;&nbsp;&nbsp;);</div><div style="padding:0 6px; white-space:pre; line-height:130%">}</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#4f4f4f;text-decoration:none">Colored by Color Scripter</a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#4f4f4f;color:white;border-radius:10px;padding:1px">cs</span></a></td></tr></table></div>
                 </div>
             </li>
         </ul>
     </div>
 </div>
+<script>
+    <!--HEADER FILE INCLUDE JS-->
+    window.addEventListener('load', function() {
+        let allElements = document.getElementsByTagName('*');
+        Array.prototype.forEach.call(allElements, function(el) {
+            let includePath = el.dataset.includePath;
+            if (includePath) {
+                let xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState === 4 && this.status === 200) {
+                        el.outerHTML = this.responseText;
+                    }
+                };
+                xhttp.open('GET', includePath, true);
+                xhttp.send();
+            }
+        });
+    });
+</script>
 </body>
 </html>
